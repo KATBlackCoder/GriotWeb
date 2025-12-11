@@ -1,0 +1,137 @@
+{
+  "workflow_version": "1.2.0",
+  "timestamps": {
+    "started": "2025-12-11T21:31:36+00:00",
+    "last_updated": "2025-12-11T22:05:42.590182+00:00"
+  },
+  "mode": "initial_scan",
+  "scan_level": "quick",
+  "project_root": "/home/blackat/project/GriotWeb",
+  "output_folder": "/home/blackat/project/GriotWeb/docs",
+  "completed_steps": [
+    {
+      "step": "step_1",
+      "status": "completed",
+      "timestamp": "2025-12-11T21:38:48.968640+00:00",
+      "summary": "Classified as monolith web (Nuxt) with 1 part: main"
+    },
+    {
+      "step": "step_5",
+      "status": "completed",
+      "timestamp": "2025-12-11T21:46:01.962806+00:00",
+      "summary": "Source tree documented (quick scan). File: docs/source-tree-analysis.md"
+    },
+    {
+      "step": "step_6",
+      "status": "completed",
+      "timestamp": "2025-12-11T21:48:12.015859+00:00",
+      "summary": "Captured dev/build/preview commands from README; no deployment config found"
+    },
+    {
+      "step": "step_7",
+      "status": "completed",
+      "timestamp": "2025-12-11T21:54:58.398286+00:00",
+      "summary": "Integration architecture not applicable (single-part monolith)"
+    },
+    {
+      "step": "step_8",
+      "status": "completed",
+      "timestamp": "2025-12-11T21:54:58.398286+00:00",
+      "summary": "Architecture doc deferred; marked To be generated in index"
+    },
+    {
+      "step": "step_9",
+      "status": "completed",
+      "timestamp": "2025-12-11T21:54:58.398286+00:00",
+      "summary": "Supporting docs written: project-overview.md, development-guide.md; existing source-tree-analysis.md"
+    },
+    {
+      "step": "step_10",
+      "status": "completed",
+      "timestamp": "2025-12-11T21:54:58.398286+00:00",
+      "summary": "Index generated with To be generated markers"
+    },
+    {
+      "step": "step_12",
+      "status": "completed",
+      "timestamp": "2025-12-11T22:05:42.590182+00:00",
+      "summary": "Documentation workflow finalized; index and supporting docs generated"
+    }
+  ],
+  "current_step": "completed",
+  "findings": {
+    "project_classification": "monolith web (Nuxt) with 1 part: main",
+    "existing_docs_count": 2,
+    "existing_docs": [
+      "README.md",
+      "docs/bmm-workflow-status.yaml"
+    ],
+    "user_context": "Generate PROGRESS.md and CHANGELOG.md",
+    "project_types": [
+      {
+        "part_id": "main",
+        "project_type_id": "web",
+        "display_name": "Web"
+      }
+    ],
+    "technology_stack": {
+      "framework": "Nuxt",
+      "nuxt_version": "4.2.2",
+      "vue_version": "3.5.25",
+      "router_version": "4.6.3",
+      "language": "TypeScript/ESM",
+      "compatibilityDate": "2025-07-15",
+      "devtools": true
+    },
+    "architecture_pattern": "web-spa-ssr-ready (Nuxt 4)",
+    "pattern_scan": {
+      "api_paths_found": [],
+      "data_model_paths_found": [],
+      "ui_component_paths_found": [
+        "app/app.vue"
+      ],
+      "state_management_paths_found": [],
+      "deployment_config_found": false,
+      "notes": "Only app/app.vue detected; no server/api/components/pages/prisma/migrations"
+    },
+    "critical_folders_summary": {
+      "app": "Nuxt root view (app.vue)",
+      "public": "Static assets",
+      "docs": "Workflow status and scan state"
+    },
+    "development_instructions": {
+      "install": "pnpm install",
+      "dev": "pnpm dev (http://localhost:3000)",
+      "build": "pnpm build",
+      "preview": "pnpm preview",
+      "notes": "Commands sourced from README; no extra env/deploy config detected"
+    },
+    "deployment_configuration": {
+      "found": false,
+      "notes": "No deployment files found; follow Nuxt deployment docs"
+    }
+  },
+  "outputs_generated": [
+    "CHANGELOG.md",
+    "PROGRESS.md",
+    "docs/api-contracts.md",
+    "docs/architecture.md",
+    "docs/component-inventory.md",
+    "docs/data-models.md",
+    "docs/deployment-guide.md",
+    "docs/development-guide.md",
+    "docs/index.md",
+    "docs/project-overview.md",
+    "docs/source-tree-analysis.md",
+    "project-scan-report.json"
+  ],
+  "resume_instructions": "Starting from step 1",
+  "project_types": [
+    {
+      "part_id": "main",
+      "project_type_id": "web",
+      "display_name": "Web"
+    }
+  ],
+  "project_structure": "monolith"
+}
